@@ -1,0 +1,9 @@
+h2 {
+  color: white;
+  text-align: center;
+  -webkit-filter: drop-shadow(8px 8px 10px black);
+  width: 66%;
+  margin: auto;
+  position: relative;
+  margin-top: 75px;
+}

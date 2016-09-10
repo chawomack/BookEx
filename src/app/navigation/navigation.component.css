@@ -1,0 +1,25 @@
+header div {
+  display: flex;
+  align-items: center;
+}
+.title {
+    flex: 1;
+    flex-wrap: nowrap;
+    flex-shrink: 2;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a, .title {
+  padding: 0 30px;
+  line-height: 64px;
+  color: #FFFFFF;
+}

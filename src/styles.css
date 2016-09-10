@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif !important;
+  background: url('./assets/studying.jpg');
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+}
