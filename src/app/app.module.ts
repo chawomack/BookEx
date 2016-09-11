@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MdCardModule } from '@angular2-material/card';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdInputModule } from '@angular2-material/input';
+import { MdIconModule } from '@angular2-material/icon';
 
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +28,7 @@ import { routing } from './shared/routing';
     MdButtonModule,
     MdCardModule,
     MdInputModule,
+    MdIconModule,
     routing
   ],
   providers: [],
