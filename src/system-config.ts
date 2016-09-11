@@ -12,7 +12,8 @@ const materialComponents = [
   'core',
   'input',
   'menu',
-  'icon'
+  'icon',
+  'list'
 ];
 
 

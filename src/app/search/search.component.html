@@ -1,6 +1,13 @@
- <md-input placeholder="Find Your University">
-   <span md-prefix>
+<md-input placeholder="Find Your University">
+  <span md-prefix>
              <i class="material-icons app-input-icon">search</i>
              &nbsp;
   </span>
- </md-input>
+</md-input>
+
+<md-list class="app-list">
+  <md-list-item *ngFor="let school of schools">
+    <h3 md-line>{{school}}</h3>
+    <p md-line class="demo-secondary-text">{{school}}</p>
+  </md-list-item>
+</md-list>
