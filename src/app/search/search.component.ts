@@ -10,6 +10,7 @@ import { SearchService } from '../search.service'
   styleUrls: ['./search.component.css'],
   providers: [SearchService]
 })
+
 export class SearchComponent implements OnInit {
   schools: Observable<string[]>;
   private searchTerms = new Subject<string>();
@@ -17,7 +18,6 @@ export class SearchComponent implements OnInit {
   constructor(private searchService: SearchService) { }
 
   ngOnInit() {
-    /*
     this.schools = this.searchTerms
       .debounceTime(300)
       .distinctUntilChanged()
@@ -26,7 +26,7 @@ export class SearchComponent implements OnInit {
         console.log(error);
         return Observable.of<string[]>([]);
       });
-      */
+
   }
 
   search(term: string): void {

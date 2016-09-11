@@ -1,4 +1,5 @@
-<md-input placeholder="Find Your University">
+<md-input placeholder="Find Your University"
+  #searchBox id="search-box" (keyup)="search(searchBox.value)">
   <span md-prefix>
              <i class="material-icons app-input-icon">search</i>
              &nbsp;
@@ -6,8 +7,8 @@
 </md-input>
 
 <md-list class="app-list">
-  <md-list-item *ngFor="let school of schools">
-    <h3 md-line>{{school}}</h3>
+  <md-list-item *ngFor="let school of schools | async">
+    <h3 md-line>{{school.name}}</h3>
     <p md-line class="demo-secondary-text">{{school}}</p>
   </md-list-item>
 </md-list>
