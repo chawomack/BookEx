@@ -14,6 +14,7 @@ import { SearchService } from '../search.service'
 export class SearchComponent implements OnInit {
   schools: Observable<string[]>;
   private searchTerms = new Subject<string>();
+  searchTags: string[] = [];
 
   constructor(private searchService: SearchService) { }
 
@@ -33,4 +34,7 @@ export class SearchComponent implements OnInit {
     this.searchTerms.next(term);
   }
 
+  selectSchool(school: string): void {
+    this.searchTags.push(school);
+  }
 }

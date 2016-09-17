@@ -27,14 +27,11 @@ app.get('/', function(req, res) {
 })
 
 app.get('/schools/?', function(req, res) {
-  let key = Object.keys(req.query)[0];
-  console.log(key);
-  let regex = new RegExp("^" + req.query.key);
-
-  School.find({key : regex}, function(err, schools) {
+  var keyName = Object.keys(req.query)[0];
+  let regex = new RegExp("^" + req.query[keyName]);
+  School.find({name : regex}, function(err, schools) {
     if (err) return handleError(err);
-    console.log(schools);
-    res.send(schools);
+    res.json({status: "success", data: schools});
   });
 })
 

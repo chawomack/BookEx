@@ -2,3 +2,10 @@ md-input {
   width: 100%;
   color: #f4513a;
 }
+
+.search-tag {
+  display: inline;
+  background: white;
+  padding: 3px;
+  font-size: 10px;
+}
