@@ -9,7 +9,6 @@ export class SearchService {
   constructor(private http: Http) { }
 
   search(term: string): Observable<string[]> {
-    console.log(term);
     return this.http.get(`${this.url}/schools/?name=${term}`)
     .map((r: Response) => r.json().data as string[]);
   }

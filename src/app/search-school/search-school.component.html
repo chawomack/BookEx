@@ -1,0 +1,12 @@
+<md-card>
+  <md-input placeholder="Find Your School"
+    #searchBox id="search-box" (keyup)="search(searchBox.value)">
+  </md-input>
+
+  <md-list class="app-list">
+    <md-list-item *ngFor="let school of schools | async">
+      <h3 md-line (click)="selectSchool(school.name); searchBox.value = ''">{{school.name}}</h3>
+      <!-- <p md-line class="demo-secondary-text">{{school}}</p> -->
+    </md-list-item>
+  </md-list>
+</md-card>

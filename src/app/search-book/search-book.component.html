@@ -1,0 +1,12 @@
+<md-card>
+  <h3>{{school}}</h3>
+
+  <md-input placeholder="Book Title"
+    #bookTitle id="book-title" (keyup)="search(bookTitle.value)">
+  </md-input>
+
+  <a (click)="showAdvanced()" class="advanced-link">advanced search</a>
+  <div [hidden]="advancedHidden" class="advanced-search">
+    <md-input placeholder="Author" #author id="author"></md-input>
+  </div>
+</md-card>

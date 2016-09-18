@@ -3,9 +3,23 @@ md-input {
   color: #f4513a;
 }
 
+.search-tags {
+    margin: 5px 0px;
+    height: 32px;
+}
+
 .search-tag {
-  display: inline;
+  display: inline-block;
   background: white;
-  padding: 3px;
-  font-size: 10px;
+  padding: 3px 5px;
+  font-size: 12px;
+  margin: 5px 5px 5px 0px;
+  border-radius: 3px;
+  border: 1px solid #f4513a;
+}
+
+.close {
+  margin: 0px 2px;
+  cursor: pointer;
+  color: #B5B5B5;
 }

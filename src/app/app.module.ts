@@ -16,13 +16,17 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { routing } from './shared/routing';
+import { SearchSchoolComponent } from './search-school/search-school.component';
+import { SearchBookComponent } from './search-book/search-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    SearchSchoolComponent,
+    SearchBookComponent
   ],
   imports: [
     BrowserModule,

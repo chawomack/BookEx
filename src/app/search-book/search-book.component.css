@@ -1,0 +1,18 @@
+h3 {
+    color: #f4513a;
+}
+
+md-input {
+  color: #f4513a;
+}
+
+#book-title {
+  width: 100%;
+}
+
+.advanced-link {
+  float: right;
+  font-size: 12px;
+  color: #b4b4b4;
+  text-decoration: underline;
+}
